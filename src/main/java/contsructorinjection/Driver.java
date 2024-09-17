@@ -1,4 +1,4 @@
-package springe13;
+package contsructorinjection;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -7,9 +7,9 @@ import org.springframework.core.io.Resource;
 
 public class Driver {
 public static void main(String[] args) {
-	Resource resource=new ClassPathResource("mobile.xml");
+	Resource resource=new ClassPathResource("laptop.xml");
 	BeanFactory beanFactory=new XmlBeanFactory(resource);
-	Mobile mobile=(Mobile) beanFactory.getBean("mobile");
-	System.out.println(mobile);
+	Laptop laptop=(Laptop) beanFactory.getBean("laptop");
+	System.out.println(laptop);
 }
 }
