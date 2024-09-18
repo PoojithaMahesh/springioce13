@@ -3,16 +3,5 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
-	<bean class="dependencyinjection.Tyre" id="ty">
-		<property name="id" value="1"></property>
-		<property name="name" value="MRF"></property>
-	</bean>
-	<bean class="dependencyinjection.Car" id="car">
-	<property name="id" value="1"></property>
-	<property name="name" value="i10"></property>
-	<property name="tyre" ref="ty"></property>
-	</bean>
-	
-	
-	
+	<context:component-scan base-package="withoutbean"></context:component-scan>	
 </beans>

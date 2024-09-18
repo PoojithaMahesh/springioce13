@@ -12,4 +12,7 @@
 	<property name="name" value="i10"></property>
 	<property name="tyre" ref="ty"></property>
 	</bean>
+	
+	
+	
 </beans>
